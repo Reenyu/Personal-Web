@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- 个人信息展示 -->
+    <img src="./images/profile.jpg" alt="广告" style="float: right;" height="200px" width="250px" right="10px">
+    <header>
+        <div>  
+        <a href="./personal_information/index.html"><h1>个人主页</h1> </a>
+        <p>个人简介：一名菜鸟大学生</p>
+        <p>爱好：读书、旅行、编程...</p>  </div>        
+    </header>
+    <!-- 每日文章和图片/视频分享 -->
+    <main>
+        <section id="latest-content">
+            <h2>最新文章和图片/视频</h2>
+            <article>
+                <h3>文章标题： <span style="color: rgb(8, 124, 233); font-size:35px" >一箭四星！我国成功发射北京三号C星星座一箭四星！</span></h3>
+                <p>文章摘要： <span style="color: black;">5月20日11时06分，我国在太原卫星发射中心使用长征二号丁运载火箭，成功将北京三号C星星座发射升空， <br>4颗卫星顺利进入预定轨道，发射任务获得圆满成功</span></p>
+                <p>发布日期：2024-05-21</p>
+                <a href="http://finance.people.com.cn/n1/2024/0521/c1004-40240090.html">阅读全文</a>
+            </article>
+            <article>
+                <h3>图片/视频标题</h3>
+                <p>图片/视频简介...</p>
+                <p>发布日期：2024-05-17</p>
+                <a href="#">查看详情</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- 搜索功能 -->
+    <section id="search">
+        <h2>搜索文章和图片/视频</h2>
+        <form id="search-form">
+            <input type="text" id="search-title" placeholder="按标题搜索">
+            <input type="date" id="search-date" placeholder="按日期搜索">
+            <button type="submit">搜索</button>
+        </form>
+        <div id="search-results"></div>
+    </section>
+
+    <!-- 留言板 -->
+    <section id="comments">
+        <h2>留言板</h2>
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="留下你的留言"></textarea>
+            <button type="submit">提交</button>
+        </form>
+        <div id="comment-list"></div>
+    </section>
+
+    <!-- 友情链接 -->
+    <footer style="margin: 0 auto; width: 40%; ">
+        <h2 style="font-size: xx-large;">友情链接</h2>
+        <ul>
+            <li style="font-size: xx-large;"><a href="http://jwzx.cqupt.edu.cn/index.php"><span style="color: rgb(242, 8, 250);">重庆邮电大学</span></a></li>
+            <li style="font-size: xx-large;"><a href="https://example.com"><span style="color: rgb(242, 8, 250);"></span></a></li>
+        </ul>
+    </footer>
+
+    <!-- 广告位 -->
+    <div id="advertisement">
+        <img src="./images/ad.jpg" alt="广告图片">
+        <button onclick="closeAd()">关闭广告</button>
+    </div>
+    <script src="./scripts/server.js"></script>
+    <script>
+        function closeAd() {
+            document.getElementById('advertisement').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
